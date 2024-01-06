@@ -1,0 +1,67 @@
+body, ul, li, p{
+    margin: 0px; /* ele adiciona ou retira as margin inicial*/
+    padding: 0px; /*Arruma o espaçamento da minha tela de navegação*/
+    list-style: none; /* tira os pontos pretos que fica na lista*/
+    font-size: 1.2rem; /* colocar o tamanho da fonte*/
+}
+
+body{
+    background-color: aliceblue;
+}
+
+a{
+    text-decoration: none; /* ele tira a linha que fica a baixo do meus botões da barra de navageação
+    */
+    color: rgb(0, 0, 0);
+}
+
+h1{
+    text-align: center; /* Serve para alinhar o meu h1 no centro */
+    margin-top: 100px; /* Esse codigo indica afastamento do meu h1 na barra de navegação */
+    font-family: 'Crimson Text', serif;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+ 
+
+.header{
+    background-color: #3c3e4156;
+    flex-wrap: wrap /* quando diminuir a minha tela ou ver o site em outro aparelho, a minha logo vai ficar como primeiro a aparecer */;
+    display: flex; /* deixa mais flexivel as minhas box ou outra coisa*/
+    justify-content: space-between /* Isso faz seração entre eles no meu botões do menu*/;
+    align-items: center; /* alinhar o centro da minha tela*/
+    padding: 20px;
+}
+
+.menu{
+    display: flex; /* Ele deixou o meu botões "sobre", "Produtos" e "Contato" um do lado do outro" */
+
+}
+
+.menu li{
+    margin-left: 20px; /* Ele cria espaçamento entre os meu botões "sobre", "Produtos" e "Contato"  */
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+
+/* CSS flex-box */
+
+
+.flex{ /* essa class .flex faz o aliamento da tela  no centro quando chegar no tamanho da tela em 800px */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.flex > div{
+    flex: 1 1 200px;;
+    margin: 10px;
+}
